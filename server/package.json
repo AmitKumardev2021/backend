@@ -11,5 +11,10 @@
     "url": "git remote add origin https://github.com/AmitKumardev2021/Mernproject-2.git"
   },
   "author": "Amit",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^6.0.11",
+    "nodemon": "^2.0.14"
+  }
 }
