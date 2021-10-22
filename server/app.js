@@ -1,10 +1,13 @@
 const express  = require('express')
 const mongoo = require('mongoose')
+const dotenv = require('dotenv')
 
 
 const app = express();
 
-const DB='mongodb://localhost:27017/?readPreference=primary&appname=MongoDB%20Compass&directConnection=true&ssl=false';
+dotenv.config({path:'./config.env'})
+
+const DB=process.env.DATABASE;
 
 mongoo.connect(DB).then(()=>{
     console.log('successfull connected');
