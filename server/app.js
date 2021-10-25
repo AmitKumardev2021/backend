@@ -7,7 +7,7 @@ const app = express();
 
 dotenv.config({path:'./config.env'})
 
-const DB=process.env.DATABASE;
+const DB = process.env.DATABASE;
 
 mongoo.connect(DB).then(()=>{
     console.log('successfull connected');
